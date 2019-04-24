@@ -31,3 +31,8 @@ class PollCreate(CreateView):
     fields = ['subject']
     success_url = '/poll/'
     #template_name = 
+
+class PollUpdate(UpdateView):
+    model = Poll
+    fields = ['subject']
+    success_url = '/poll/'
